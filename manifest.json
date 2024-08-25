@@ -1,6 +1,6 @@
 {
   "id": "frontmatter-next-review-date",
-  "name": "Frontmatter Next Review Date",
+  "name": "Frontmatter next review date",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Automatically update the next review date field in the frontmatter based on creation or last review date.",
