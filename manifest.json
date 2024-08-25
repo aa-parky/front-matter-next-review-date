@@ -6,5 +6,18 @@
   "description": "Automatically update the next review date field in the frontmatter based on creation or last review date.",
   "author": "aaparky",
   "authorUrl": "https://github.com/aa-parky",
-  "isDesktopOnly": false
+  "isDesktopOnly": false,
+  "settings": {},
+  "commands": [
+    {
+      "id": "toggle-plugin",
+      "name": "Toggle Frontmatter Next Review Date Plugin",
+      "hotkeys": [
+        {
+          "modifiers": ["Ctrl", "Shift"],
+          "key": "T"
+        }
+      ]
+    }
+  ]
 }
