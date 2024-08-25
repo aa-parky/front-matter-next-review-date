@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with [Plugin Name].  If not, see <https://www.gnu.org/licenses/>.
  */
- 
+
 const { Plugin, TFile, moment, Notice, PluginSettingTab, Setting } = require("obsidian");
 
 module.exports = class FrontmatterNextReview extends Plugin {
@@ -36,12 +36,7 @@ module.exports = class FrontmatterNextReview extends Plugin {
 		this.updateStatusBar(); // Update status bar when toggled
 		this.saveSettings(); // Save settings whenever the plugin is toggled
 	  },
-	  hotkeys: [
-		{
-		  modifiers: ["Ctrl", "Shift"],
-		  key: "T",
-		},
-	  ],
+	  // No default hotkeys defined; users can set their own in Obsidian settings.
 	});
 
 	this.registerEvent(
@@ -119,5 +114,9 @@ class FrontmatterNextReviewSettingTab extends PluginSettingTab {
 		  await this.plugin.saveSettings();
 		})
 	  );
+
+	containerEl.createEl("p", {
+	  text: "You can set your own hotkey for toggling this plugin in the Obsidian 'Hotkeys' settings under 'Settings > Hotkeys'.",
+	});
   }
 }
